@@ -1,42 +1,25 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
   text-align: center;
 }
+/* src/index.css or a dedicated CSS file */
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.multi-stop-gradient {
+  /* You can adjust the direction (e.g., 90deg, to top right, etc.) */
+  background: linear-gradient(
+    90deg, 
+    #1149ef 0%, /* Start with black */
+    #4169E1 11%, /* Blue (Approximate linear blue) */
+    #8A2BE2 22%, /* Purple (Approximate linear purple) */
+    #8B0000 33%, /* Dark Red/Magenta (Approximate linear magenta) */
+    #FF8C00 44%, /* Orange (Approximate linear orange) */
+    #FF7F50 55%, /* Coral (Approximate linear coral) */
+    #FFFF00 66%, /* Yellow (Approximate linear yellow) */
+    #DD2476 77%, /* Pink/Crimson */
+    #F7971E 88%, /* Orange/Yellow */
+    #FF512F 94%, /* Red/Orange */
+    #b02689 100% /* End with white */
+  );
 }
